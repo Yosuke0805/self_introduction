@@ -1,31 +1,97 @@
+/* General styles */
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 20px;
-background-color: #f4f4f4;
-}
-
-h1 {
-text-align: center;
-margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 .content {
-max-width: 800px;
-margin: 0 auto;
-background-color: white;
-padding: 30px;
-border-radius: 5px;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.qr-code {
-text-align: center;
-margin-top: 30px;
+/* Profile picture styles */
+.profile-picture {
+    text-align: center;
+    margin-bottom: 20px;
 }
+
 .profile-picture img {
-max-width: 300px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* This will crop the image to fit the dimensions */
+    border-radius: 50%;
+    border: 3px solid #3498db;
 }
+
+/* Profile info styles */
+.profile-info h1 {
+    color: #3498db;
+    text-align: center;
+}
+
+.profile-info h2 {
+    color: #2c3e50;
+}
+
+/* QR code styles */
+.qr-code {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.qr-code h2, .qr-code h3 {
+    color: #2c3e50;
+}
+
 .qr-code img {
-max-width: 200px;
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    display: block;
+    object-fit: cover;    
+}
+
+/* Social links styles */
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .profile-picture img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .qr-code img {
+        width: 100px;
+        height: 100px;
+    }
 }
